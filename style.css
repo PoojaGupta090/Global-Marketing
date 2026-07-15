@@ -1,0 +1,186 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f4f4f4;
+}
+
+header{
+background:#003366;
+padding:15px;
+position:sticky;
+top:0;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+width:90%;
+margin:auto;
+}
+
+nav h2{
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+width:60%;
+margin-bottom:20px;
+}
+
+.hero button{
+padding:12px 30px;
+border:none;
+background:#ff9800;
+color:white;
+font-size:18px;
+cursor:pointer;
+border-radius:5px;
+}
+
+.hero button:hover{
+background:#ff5722;
+}
+
+section{
+padding:60px 10%;
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+color:#003366;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,.2);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.box{
+background:#003366;
+color:white;
+padding:30px;
+width:220px;
+text-align:center;
+border-radius:10px;
+}
+
+.box h3{
+font-size:40px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+width:400px;
+margin:auto;
+}
+
+form input,
+form textarea{
+padding:12px;
+margin:10px 0;
+font-size:16px;
+}
+
+form button{
+padding:12px;
+background:#003366;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+.hero p{
+width:90%;
+}
+
+form{
+width:100%;
+}
+
+}
